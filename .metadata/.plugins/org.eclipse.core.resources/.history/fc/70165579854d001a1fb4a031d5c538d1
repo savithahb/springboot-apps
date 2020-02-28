@@ -1,0 +1,27 @@
+package com.orm.run;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.orm.model.Person;
+import com.orm.utils.SessionProvider;
+
+
+public class HibernateRun {
+
+	public static void main(String [] args) {
+		SessionFactory sf=SessionProvider.getSessionFactory();
+		Session session=sf.openSession();
+		Transaction t= session.beginTransaction();
+			Person p= new Person(4, "Sita", "Delhi");
+			session.save(p);
+			Person p1= new Person(2, "Krishna", "Bengaluru");
+			session.save(p);
+			Person p2= new Person(3, "Bhim", "Pune");
+			session.save(p);
+			t.commit();
+		System.out.println("A new record added");
+			
+	}
+}

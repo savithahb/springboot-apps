@@ -1,0 +1,38 @@
+package com.orm.model;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+@Entity
+public class Emp {
+	@Id
+	private Integer eno;
+	@Column
+	private String name;
+	@Column
+	private String city;
+	@ManyToOne(cascade = CascadeType.ALL)
+	private Dept dept;
+		
+	@Column
+	
+	private String desig;
+	
+	public Emp(Integer eno, String name, String city, String desig) {
+		super();
+		this.eno = eno;
+		this.name = name;
+		this.city = city;
+		this.desig = desig;
+	}
+	
+	
+	public Emp() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+}

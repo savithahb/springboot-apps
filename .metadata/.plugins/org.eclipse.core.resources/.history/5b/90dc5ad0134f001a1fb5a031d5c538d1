@@ -1,0 +1,3 @@
+1name.invalid=please fill name
+2city.invalid=please fill city
+3sno.invalid=Serial number must be between 10 and 1000

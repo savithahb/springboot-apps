@@ -1,0 +1,4 @@
+class IDException extends Exception{
+		public String toString() {
+			return "IDException: ID Exists! :( ";
+		}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="com.ioc.system.Process"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.ioc.system2.JavaConfig"/>
+<fullyQualifiedTypeName name="com.ioc.system2.Project"/>
+<fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.DisposableBean"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.config.BeanPostProcessor"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContextAware"/>
+<fullyQualifiedTypeName name="com.ioc.events.MyEventPublisher"/>
+</qualifiedTypeNameHistroy>

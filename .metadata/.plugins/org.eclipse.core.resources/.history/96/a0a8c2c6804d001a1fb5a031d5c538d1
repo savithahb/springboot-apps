@@ -1,0 +1,51 @@
+package com.orm.run;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.orm.model.Contact;
+import com.orm.model.Dept;
+import com.orm.model.Emp;
+import com.orm.utils.SessionProvider;
+
+public class HibernateRun3 {
+	
+	public static void main (String [] args) {
+		SessionFactory sf=SessionProvider.getSessionFactory();
+		Session session=sf.openSession();
+		Transaction t=session.beginTransaction();
+		
+		Dept d=new Dept(1, "Production");
+		Emp e1= new Emp(1,"Naveen", "Chennai","Manager");
+		Emp e2= new Emp(2,"Ram", "Chennai","Clerk");
+		Emp e3= new Emp(3,"Jessica", "Lucknow","Accountant");
+		
+		Contact c1=new Contact(1,"12/2","MG Road","0987843732");
+		Contact c2=new Contact(2,"12/2","MG Road","0987843732");
+		Contact c3=new Contact(3,"12/2","MG Road","0987843732");
+		
+		/*e1.setDepartment(d);
+		e2.setDepartment(d);
+		e3.setDepartment(d);*/
+		
+		e1.setContact(c1);
+		e2.setContact(c2);
+		e3.setContact(c3);
+		
+		/*Set<Emp> set=new HashSet<Emp> ();
+		set.add(e1);
+		set.add(e2);
+		set.add(e3);
+		
+		d.setEmployees(set);*/
+		
+		session.update(d);
+		t.commit();
+		
+
+}
+}

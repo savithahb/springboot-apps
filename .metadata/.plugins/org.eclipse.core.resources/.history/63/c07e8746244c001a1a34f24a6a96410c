@@ -1,0 +1,15 @@
+package com.ioc.system;
+
+public class ABCCompany implements Company {
+	
+	private BusinessOperation branch;
+	private BusinessOperation manufacturing;
+	@Override
+	public void establish (String name) {
+		//todo auto generated method stub
+		System.out.println(name+" Company is establish");
+		branch.perform("Chennai");
+		manufacturing.perform("Tyre manufacturing");
+	}
+
+}

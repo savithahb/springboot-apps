@@ -1,0 +1,21 @@
+package com.boot.services;
+
+import java.util.Map;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class DataService {
+	
+	public Map<String, String []> names () {
+		String [] names= {"Savitha","Monisha","Kumar","Ananya","Raghavendra"};
+		
+		String [] names2= {"Krishna","Hari","Avyan"};
+		Map<String,String[]> map=new HashMap<String,String[]>();
+		map.compute("team1", names);
+		map.compute("team2", names);
+		return map;
+		
+	}
+
+}

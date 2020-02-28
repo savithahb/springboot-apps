@@ -1,0 +1,24 @@
+$(document).ready(
+		
+		function(){
+	// alert("Jquery is working!!");
+			
+				$("#city").keyup(
+							function(){
+								let pattern=$('#city').val();
+								$.get("http://localhost:8898/api/cities/"+pattern,function(cities){
+											let code="";
+											for(let x in cities)){
+											code+="<tr>";
+											code+="<tr>"+cities[x].name+"</td>";
+											code+="<tr>"+cities[x].district+"</td>";
+											code+="<tr>"+cities[x].population+"</td>";
+											code+="</tr>";
+																 }
+								$('#tbody').html(code);
+																									});	
+						
+										});
+			
+										}
+				);

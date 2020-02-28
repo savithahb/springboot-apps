@@ -1,0 +1,39 @@
+package com.orm.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Training {
+	
+	@Id
+	private Integer tno;
+	@Column
+	private String name;
+	
+	public Training() {}
+	
+	public Training(Integer tno, String name) {
+		super();
+		this.tno = tno;
+		this.name = name;
+	}
+
+	public Integer getTno() {
+		return tno;
+	}
+
+	public void setTno(Integer tno) {
+		this.tno = tno;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+}

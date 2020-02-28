@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Fri Feb 14 11:05:02 IST 2020
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Admin\\Downloads\\spring-framework-4.1.6.RELEASE-dist\\spring-framework-4.1.6.RELEASE\\libs\\spring-web-4.1.6.RELEASE-sources.jar=C\:\\Users\\Admin\\Downloads\\Spring_tool\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\JavaWeb\\WEB-INF\\lib\\spring-web-4.1.6.RELEASE-sources.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Admin\\Downloads\\spring-framework-4.1.6.RELEASE-dist\\spring-framework-4.1.6.RELEASE\\libs\\spring-web-4.1.6.RELEASE.jar=C\:\\Users\\Admin\\Downloads\\Spring_tool\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\JavaWeb\\WEB-INF\\lib\\spring-web-4.1.6.RELEASE.jar
+org.eclipse.jst.jee.server\:JavaWeb=C\:\\Users\\Admin\\Downloads\\Spring_tool\\sts-bundle\\pivotal-tc-server\\instances\\base-instance\\wtpwebapps\\JavaWeb

@@ -1,0 +1,23 @@
+package com.orm.run;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.orm.model.Contact;
+import com.orm.model.Dept;
+import com.orm.model.Emp;
+import com.orm.utils.SessionProvider;
+
+
+public class HibernateRun4 {
+
+	public static void main (String [] args) {
+		SessionFactory sf=SessionProvider.getSessionFactory();
+		Session session=sf.openSession();
+		Transaction t=session.beginTransaction();
+		
+	
+}
+
+}

@@ -1,0 +1,15 @@
+$(document).ready(
+		
+		function(){
+	//alert("Jquery is working!!");
+			
+	$("#city").keyup(
+			
+			function(){
+	let pattern=$('#city'),val();	
+		
+	}
+	);		
+			
+}
+		);

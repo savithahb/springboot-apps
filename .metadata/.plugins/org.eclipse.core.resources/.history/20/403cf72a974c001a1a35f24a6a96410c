@@ -1,0 +1,21 @@
+package com.ioc.system2;
+
+import org.springframework.stereotype.Component;
+
+@Component
+
+public class ERPProject implements Project {
+	
+	public ERPProject ()
+	
+	{
+	System.out.println("ERP Project Instantiated");
+	System.out.println(hashcode());
+	}
+	@Override
+	public void details () {
+		System.out.println("ERP Project Started");
+			
+	}
+
+}

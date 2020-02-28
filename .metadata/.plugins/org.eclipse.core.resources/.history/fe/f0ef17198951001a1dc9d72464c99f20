@@ -1,0 +1,12 @@
+package com.boot.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class WebController {
+	@RequestMapping("/hello.do")
+	public String firstRequest() {
+		return "first";
+	}
+
+}

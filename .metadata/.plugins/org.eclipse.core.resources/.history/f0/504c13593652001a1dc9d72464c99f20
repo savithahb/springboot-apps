@@ -1,0 +1,17 @@
+$(document).ready(
+		
+		function(){
+	//alert("Jquery is working!!");
+			
+	$("#city").keyup(
+			
+			function(){
+	let pattern=$('#city').val();
+	
+	$.get("http://localhost:8898/api/cities/"+pattern)
+		
+	}
+	);		
+			
+}
+		);

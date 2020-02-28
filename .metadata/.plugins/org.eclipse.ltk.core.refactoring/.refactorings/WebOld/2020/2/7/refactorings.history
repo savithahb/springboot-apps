@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;FirstServlet.java&apos; to &apos;WebOld2/src/com.mvc.control&apos;&#x0D;&#x0A;- Original project: &apos;WebOld&apos;&#x0D;&#x0A;- Destination element: &apos;WebOld2/src/com.mvc.control&apos;&#x0D;&#x0A;- Original element: &apos;com.mvc.control.FirstServlet.java&apos;" description="Copy compilation unit" destination="=WebOld2/src&lt;com.mvc.control" element1="/src&lt;com.mvc.control{FirstServlet.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1581574564851" units="1" version="1.0"/>
+</session>

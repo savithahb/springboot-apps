@@ -1,0 +1,19 @@
+package com.orm.run;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import com.orm.utils.SessionProvider;
+
+import javax.transaction.Transaction;
+
+
+
+public class HibernateRun {
+
+	public static void main(String [] args) {
+		SessionFactory sf=SessionProvider.getSessionFactory();
+		Session session=sf.openSession();
+		Transaction t=session.beginTransaction()
+			
+	}
+}

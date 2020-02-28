@@ -1,0 +1,30 @@
+package com.utils;
+
+import org.springframework.validation.Errors;
+import org.springframework.validation.ValidationUtils;
+import org.springframework.validation.Validator;
+
+import com.model.Person;
+
+public class PersonValidator implements Validator {
+
+	@Override
+	public boolean supports(Class<?> className) {
+		return Person.class.isAssignableFrom(className);
+	}
+
+	@Override
+	public void validate(Object arg0, Errors arg1) {
+		
+		Person p=(Person)object;
+		if (p.getSno()==null) || p.getSno()<10 ||p.getSno()>1000)
+			err.rejctValue("sno","sno.invalid");
+			
+			ValidationUtils.rejectIfEmpty(err, "name", "name.invalid");
+			ValidationUtils.rejectIfEmpty(err, "city", "city.invalid");
+			
+		
+	
+	}
+
+}

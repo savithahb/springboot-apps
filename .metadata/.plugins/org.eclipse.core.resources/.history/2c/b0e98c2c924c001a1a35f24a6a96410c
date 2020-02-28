@@ -1,0 +1,7 @@
+package com.ioc.system2;
+
+public class MobileUI implements Project {
+	
+	System.out.println("Mobile UI project started");
+
+}
